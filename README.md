@@ -25,7 +25,7 @@ function doSomething(list) {
 
 ### In-place Reversal of a Linked List
 
-```
+```js
 function reverseList(head) {
 
   let previous = null;
@@ -47,7 +47,7 @@ function reverseList(head) {
 
 or if only part of the linked list needs to be reverted:
 
-```
+```js
 function reverseSubList(head) {
   let dummy = Node(head);
 
