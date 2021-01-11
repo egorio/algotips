@@ -131,3 +131,36 @@ function traverseTreeRecursive(node) {
   return result;
 }
 ```
+
+### Cyclic Sort
+```js
+function sortArray(nums) {
+  let i = 0;
+  while (i < nums.length) {
+    j = nums[i]; // Sometimes j = nums[i] - 1;
+    if (nums[i] !== nums[j]) {
+      let tmp = nums[i];
+      nums[i] = nums[j];
+      nums[j] = tmp;
+    } else {
+      i += 1;
+    }
+  }
+```
+
+or if the list contains missing numbers
+
+```js
+function sortArray(nums) {
+  let i = 0;
+  while (i < nums.length) {
+    j = nums[i]; // Sometimes j = nums[i] - 1;
+    if (nums[i] !== nums[j] && nums[i] < nums.length) { // Additional check here
+      let tmp = nums[i];
+      nums[i] = nums[j];
+      nums[j] = tmp;
+    } else {
+      i += 1;
+    }
+  }
+```
