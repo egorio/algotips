@@ -1,4 +1,4 @@
-# algotips
+# AlgoTips
 Algorithmic Patterns and Tips
 
 
