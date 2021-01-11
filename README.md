@@ -2,7 +2,7 @@
 Algorithmic Patterns and Tips
 
 
-### Sliding Window
+### Sliding Window (two pointers move from the start of the list)
 
 ```js
 function doSomething(list) {
@@ -77,4 +77,57 @@ function reverseSubList(head) {
 }
 ```
 
+### Tree Breadth First Search
 
+```js
+class Node {
+  value;
+  left;
+  right; 
+};
+
+function traverseTree(root) {
+  let queue = [];
+
+  queue.push(root);
+
+  while (queue.length > 0) {
+    let levelSize = queue.length;
+    
+    // Walk on level
+    while (levelSize--) {
+      let node = queue.shift();
+
+      if(node.left !== null) {
+        queue.push(node.left);
+      }
+
+      if(node.right !== null) {
+        queue.push(node.right);
+      }
+    }
+
+    // Move to the mext level
+  }
+};
+
+```
+
+### Tree Depth First Search
+
+```js
+function traverseTreeRecursive(node) {
+  // Leaf
+  if (node === null) {
+    return false;
+  }
+  
+  let leftResult = traverseTreeRecursive(node.left);
+  let rightResult = traverseTreeRecursive(node.right);
+  
+  // Do something with leftResult and rightResult
+  let result = ...;
+  
+  return result;
+}
+```
