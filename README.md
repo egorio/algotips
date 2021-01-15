@@ -139,9 +139,7 @@ function sortArray(nums) {
   while (i < nums.length) {
     j = nums[i]; // Sometimes j = nums[i] - 1;
     if (nums[i] !== nums[j]) {
-      let tmp = nums[i];
-      nums[i] = nums[j];
-      nums[j] = tmp;
+      [nums[i], nums[j]] = [nums[j], nums[i]];
     } else {
       i += 1;
     }
@@ -156,9 +154,7 @@ function sortArray(nums) {
   while (i < nums.length) {
     j = nums[i]; // Sometimes j = nums[i] - 1;
     if (nums[i] !== nums[j] && nums[i] < nums.length) { // Additional check here
-      let tmp = nums[i];
-      nums[i] = nums[j];
-      nums[j] = tmp;
+      [nums[i], nums[j]] = [nums[j], nums[i]];
     } else {
       i += 1;
     }
