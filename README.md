@@ -137,7 +137,7 @@ function traverseTreeRecursive(node) {
 function sortArray(nums) {
   let i = 0;
   while (i < nums.length) {
-    j = nums[i]; // Sometimes j = nums[i] - 1;
+    const j = nums[i]; // Sometimes j = nums[i] - 1;
     if (nums[i] !== nums[j]) { // Check if the number in the range if neede ( `&& nums[i] < nums.length` )
       [nums[i], nums[j]] = [nums[j], nums[i]];
     } else {
