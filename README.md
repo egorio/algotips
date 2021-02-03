@@ -2,6 +2,31 @@
 Algorithmic Patterns and Tips
 
 
+### Binary Search 
+
+```js
+
+function searchSomething(arr, needle) {
+  let start = 0;
+  let mid = -1;
+  let end = arr.length - 1;
+
+  while (start <= end) {
+    
+    mid = Math.floor(start + (end - start) / 2);
+
+    if (arr[mid] === needle) {
+      return mid;
+    }
+
+    if (arr[mid] > needle) {
+      end = mid - 1;
+    } else {
+      start = mid + 1;
+    }
+  }
+```
+
 ### Sliding Window (two pointers move from the start of the list)
 
 ```js
