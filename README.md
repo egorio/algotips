@@ -2,8 +2,14 @@
 Algorithmic Patterns and Tips
 
 [Binary Search](#binary-search)
+
 [Sliding Window](#sliding-window)
+
 [In-place Reversal of a Linked List](#in-place-reversal-of-a-linked-list)
+
+[Tree Breadth First Search (BFS)](#tree-breadth-first-search)
+
+[Tree Depth First Search (DFS)](#tree-depth-first-search)
 
 ### Binary Search 
 
