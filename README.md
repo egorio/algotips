@@ -1,6 +1,7 @@
 # AlgoTips
 Algorithmic Patterns and Tips
 
+[A](#binary-search)
 
 ### Binary Search 
 
