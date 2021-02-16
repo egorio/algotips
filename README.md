@@ -1,7 +1,9 @@
 # AlgoTips
 Algorithmic Patterns and Tips
 
-[A](#binary-search)
+[Binary Search](#binary-search)
+[Sliding Window](#sliding-window)
+[In-place Reversal of a Linked List](#in-place-reversal-of-a-linked-list)
 
 ### Binary Search 
 
@@ -28,7 +30,7 @@ function searchSomething(arr, needle) {
   }
 ```
 
-### Sliding Window (two pointers move from the start of the list)
+### Sliding Window
 
 ```js
 function doSomething(list) {
