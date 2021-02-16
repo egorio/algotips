@@ -11,6 +11,8 @@ Algorithmic Patterns and Tips
 
 [Tree Depth First Search (DFS)](#tree-depth-first-search)
 
+[Cyclic Sort](#cyclic-sort)
+
 ### Binary Search 
 
 ```js
